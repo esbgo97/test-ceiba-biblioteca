@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assemblies timestamp="08/17/2023 18:14:23">
+  <assembly name="C:\Users\esbus\Documents\Jobs\Ceiba\Repos\205abc52-a956-4fb0-914b-b6c34fab5a50\PruebaIngresoBibliotecario\PruebaIngresoBibliotecario.Api.Tests\bin\Debug\net6.0\PruebaIngresoBibliotecario.Api.Tests.dll" run-date="2023-08-17" run-time="18:14:23" total="8" passed="3" failed="5" skipped="0" time="0.403" errors="0">
+    <errors />
+    <collection total="8" passed="3" failed="5" skipped="0" name="Test collection for Api.Test.PrestamoControllerTest" time="0.403">
+      <test name="Api.Test.PrestamoControllerTest.PostPrestamoAfiliadoIsbnError" type="Api.Test.PrestamoControllerTest" method="PostPrestamoAfiliadoIsbnError" time="0.3022883" result="Pass">
+        <traits />
+      </test>
+      <test name="Api.Test.PrestamoControllerTest.PostPrestamoAfiliadoFechaEntregaExito" type="Api.Test.PrestamoControllerTest" method="PostPrestamoAfiliadoFechaEntregaExito" time="0.0220228" result="Fail">
+        <failure>
+          <message>System.Net.Http.HttpRequestException : Response status code does not indicate success: 400 (Bad Request).</message>
+          <stack-trace>   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Api.Test.PrestamoControllerTest.PostPrestamoAfiliadoFechaEntregaExito() in C:\Users\esbus\Documents\Jobs\Ceiba\Repos\205abc52-a956-4fb0-914b-b6c34fab5a50\PruebaIngresoBibliotecario\PruebaIngresoBibliotecario.Api.Tests\PrestamoControllerTest.cs:line 149</stack-trace>
+        </failure>
+        <traits />
+      </test>
+      <test name="Api.Test.PrestamoControllerTest.PostPrestamoError" type="Api.Test.PrestamoControllerTest" method="PostPrestamoError" time="0.0107305" result="Fail">
+        <failure>
+          <message>System.Text.Json.JsonException : The JSON value could not be converted to System.Collections.Generic.Dictionary`2[System.String,System.String]. Path: $.status | LineNumber: 0 | BytePositionInLine: 122.
+---- System.InvalidOperationException : Cannot get the value of a token type 'Number' as a string.</message>
+          <stack-trace>   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack&amp; state, Utf8JsonReader&amp; reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, JsonSerializerOptions options, ReadStack&amp; state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at Api.Test.PrestamoControllerTest.PostPrestamoError() in C:\Users\esbus\Documents\Jobs\Ceiba\Repos\205abc52-a956-4fb0-914b-b6c34fab5a50\PruebaIngresoBibliotecario\PruebaIngresoBibliotecario.Api.Tests\PrestamoControllerTest.cs:line 87
+----- Inner Stack Trace -----
+   at System.Text.Json.Utf8JsonReader.GetString()
+   at System.Text.Json.Serialization.Converters.StringConverter.Read(Utf8JsonReader&amp; reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonDictionaryConverter`3.OnTryRead(Utf8JsonReader&amp; reader, Type typeToConvert, JsonSerializerOptions options, ReadStack&amp; state, TDictionary&amp; value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader&amp; reader, Type typeToConvert, JsonSerializerOptions options, ReadStack&amp; state, T&amp; value)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader&amp; reader, JsonSerializerOptions options, ReadStack&amp; state)</stack-trace>
+        </failure>
+        <traits />
+      </test>
+      <test name="Api.Test.PrestamoControllerTest.PostPrestamoAfiliadoTipoUsuarioError" type="Api.Test.PrestamoControllerTest" method="PostPrestamoAfiliadoTipoUsuarioError" time="0.0125018" result="Pass">
+        <traits />
+      </test>
+      <test name="Api.Test.PrestamoControllerTest.PostPrestamoEmpleadoFechaEntregaExito" type="Api.Test.PrestamoControllerTest" method="PostPrestamoEmpleadoFechaEntregaExito" time="0.0215973" result="Fail">
+        <failure>
+          <message>System.Net.Http.HttpRequestException : Response status code does not indicate success: 400 (Bad Request).</message>
+          <stack-trace>   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Api.Test.PrestamoControllerTest.PostPrestamoEmpleadoFechaEntregaExito() in C:\Users\esbus\Documents\Jobs\Ceiba\Repos\205abc52-a956-4fb0-914b-b6c34fab5a50\PruebaIngresoBibliotecario\PruebaIngresoBibliotecario.Api.Tests\PrestamoControllerTest.cs:line 128</stack-trace>
+        </failure>
+        <traits />
+      </test>
+      <test name="Api.Test.PrestamoControllerTest.PostPrestamoInvitadoFechaEntregaExito" type="Api.Test.PrestamoControllerTest" method="PostPrestamoInvitadoFechaEntregaExito" time="0.0125834" result="Fail">
+        <failure>
+          <message>System.Net.Http.HttpRequestException : Response status code does not indicate success: 400 (Bad Request).</message>
+          <stack-trace>   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Api.Test.PrestamoControllerTest.PostPrestamoInvitadoFechaEntregaExito() in C:\Users\esbus\Documents\Jobs\Ceiba\Repos\205abc52-a956-4fb0-914b-b6c34fab5a50\PruebaIngresoBibliotecario\PruebaIngresoBibliotecario.Api.Tests\PrestamoControllerTest.cs:line 107</stack-trace>
+        </failure>
+        <traits />
+      </test>
+      <test name="Api.Test.PrestamoControllerTest.GetPrestamoExito" type="Api.Test.PrestamoControllerTest" method="GetPrestamoExito" time="0.0111103" result="Fail">
+        <failure>
+          <message>System.Net.Http.HttpRequestException : Response status code does not indicate success: 400 (Bad Request).</message>
+          <stack-trace>   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Api.Test.PrestamoControllerTest.GetPrestamoExito() in C:\Users\esbus\Documents\Jobs\Ceiba\Repos\205abc52-a956-4fb0-914b-b6c34fab5a50\PruebaIngresoBibliotecario\PruebaIngresoBibliotecario.Api.Tests\PrestamoControllerTest.cs:line 28</stack-trace>
+        </failure>
+        <traits />
+      </test>
+      <test name="Api.Test.PrestamoControllerTest.GetPrestamoError" type="Api.Test.PrestamoControllerTest" method="GetPrestamoError" time="0.0103707" result="Pass">
+        <traits />
+      </test>
+    </collection>
+  </assembly>
+</assemblies>
